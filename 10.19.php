@@ -1,50 +1,28 @@
 <?php
 
-$kolonner = 1;
-$rad = 1;
-$maxrad = 24; //velg hvor mange rader du vil ha
+$a = 1;
+$b = 1;
+$kolonner = 2;
+$rader = 42;
 
+echo "<table> <tr> ";
 
-//setter opp starten til tabbelen
-if ($kolonner == 1) {
-	echo "
-	<table>
-		<tr>";
+while ($a <= $kolonner) {
+	echo "<th> Kollone </th>";
+	$a = $a + 1;
+
 
 }
 
-//setter opp kollonene
-while ($kolonner <= 2) {
-		echo "
-			<th> kollonne </th>";
-		$kolonner = $kolonner + 1;
+echo "</tr><tr>";
+
+while ($b <= $rader) {
+	echo "<td> Rad </td>";
+	echo "<td> Rad </td>";
+	$b = $b + 1;
+echo "</tr>";
 }
 
-//avslutter kollonnene
-if ($kolonner == 2) {
-	echo "
-		</tr>";
-	$kolonner = $kolonner + 1;
-
-}
-
-//sjekker om $rad er mindre en $maxrad, vis ja så lag en ny rad
-while ($rad <= $maxrad) {
-		echo "
-		<tr>
-			<td> $rad.  rad </td>
-			<td> rad </td>
-		</tr>";
-		$rad = $rad + 1;
-}
-
-//sjekker om rad = maxrad og avslutter tabbelen om ja
-if ($rad == $maxrad) {
-	echo "
-			</table>
-		";
-
-	$rad = $rad + 1;
-}
+echo "</table>";
 
 ?>
