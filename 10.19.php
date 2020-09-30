@@ -28,7 +28,7 @@ if ($kolonner == 2) {
 
 }
 
-//sjekker om $rad er mindre en $maxrad, vis ikke lag en ny rad
+//sjekker om $rad er mindre en $maxrad, vis ja så lag en ny rad
 while ($rad <= $maxrad) {
 		echo "
 		<tr>
